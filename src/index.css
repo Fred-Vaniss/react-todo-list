@@ -1,9 +1,12 @@
 body {
   margin: 0;
+  background-color: lightsteelblue;
+}
+
+body, input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: lightsteelblue;
 }
 
 code {
@@ -11,8 +14,9 @@ code {
 }
 
 .wrapper {
+  padding: 0 20px;
   margin: 0 auto;
-  max-width: 900px;
+  max-width: 600px;
 }
 
 h1 {
@@ -20,10 +24,10 @@ h1 {
 }
 
 .todo-input {
-  margin-left: 10px;
-  font-size: 2rem;
+  margin-left: 6px;
+  font-size: 1em;
   border: none;
-  width: 90%;
+  width: 85%;
   background-color: transparent;
 }
 
@@ -34,12 +38,13 @@ h1 {
 .todo-list {
   background-color: white;
   border-radius: 10px;
+  font-size: .7rem;
 }
 
 .todo-item {
   position: relative;
   font-size: 2em;
-  padding: 12px 15px;
+  padding: 12px 10px;
 }
 
 .todo-item:not(:first-child) {
