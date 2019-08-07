@@ -20,7 +20,7 @@ class TodoItem extends React.Component{
         return(
             <div className='todo-item'>
                 <button className='check' onClick={this.checkItem}><span role="img" aria-label="check">{this.state.checked ? "✅" : "🟥"}</span></button> { this.props.task.title }
-                <button className='todo-remove' onClick={this.props.onDelete}><span role="img" aria-label="remove">❌</span></button>
+                <button className='todo-remove' onClick={this.props.onDelete.bind(this, this.props.task.id)}><span role="img" aria-label="remove">❌</span></button>
             </div>
         )
     }

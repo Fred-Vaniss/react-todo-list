@@ -10,6 +10,7 @@ class App extends React.Component {
       todoIndex: 0,
       todoList: []
     }
+    this.handleDelete = this.handleDelete.bind(this)
   }
 
   onChange(event){
@@ -37,8 +38,15 @@ class App extends React.Component {
     })
   }
 
-  handleDelete(){
-    console.log("delete")
+  handleDelete(id){
+    const array = this.state.todoList
+    const index = array.findIndex(i => i.id === id)
+
+    array.splice(index, 1)
+
+    this.setState({
+      todoList: array
+    })
   }
 
   render(){
