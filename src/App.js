@@ -1,5 +1,5 @@
 import React from 'react';
-import ls from 'local-storage'
+// import ls from 'local-storage'
 import { TodoItem } from './components'
 import { isNull } from 'util';
 
@@ -54,12 +54,14 @@ class App extends React.Component {
   }
 
   handleCheck(id, state){
-    console.log("check")
+    console.log({state})
     console.log({id})
-    // const array = this.state.todoList
-    // const index = array.findIndex(i => i.id === id)
+    const array = this.state.todoList
+    const index = array.findIndex(i => i.id === id)
 
-    // array[index].checked = state
+    array[index].checked = state
+
+    this.saveData(this.state)
   }
 
   handleDelete(id){
