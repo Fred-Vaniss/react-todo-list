@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Fred-Vaniss/react-todo-list/static/css/main.6682083f.chunk.css",
+    "main.js": "/Fred-Vaniss/react-todo-list/static/js/main.c0956d4e.chunk.js",
+    "main.js.map": "/Fred-Vaniss/react-todo-list/static/js/main.c0956d4e.chunk.js.map",
+    "runtime~main.js": "/Fred-Vaniss/react-todo-list/static/js/runtime~main.ed4430b9.js",
+    "runtime~main.js.map": "/Fred-Vaniss/react-todo-list/static/js/runtime~main.ed4430b9.js.map",
+    "static/js/2.d5b93b5d.chunk.js": "/Fred-Vaniss/react-todo-list/static/js/2.d5b93b5d.chunk.js",
+    "static/js/2.d5b93b5d.chunk.js.map": "/Fred-Vaniss/react-todo-list/static/js/2.d5b93b5d.chunk.js.map",
+    "index.html": "/Fred-Vaniss/react-todo-list/index.html",
+    "precache-manifest.ee6acd4669f140b8ba627628f6ac9456.js": "/Fred-Vaniss/react-todo-list/precache-manifest.ee6acd4669f140b8ba627628f6ac9456.js",
+    "service-worker.js": "/Fred-Vaniss/react-todo-list/service-worker.js",
+    "static/css/main.6682083f.chunk.css.map": "/Fred-Vaniss/react-todo-list/static/css/main.6682083f.chunk.css.map"
+  }
+}
