@@ -19,9 +19,16 @@ h1 {
   text-align: center;
 }
 
-form {
-  text-align: center;
-  margin-bottom: 10px;
+.todo-input {
+  margin-left: 10px;
+  font-size: 2rem;
+  border: none;
+  width: 90%;
+  background-color: transparent;
+}
+
+.todo-input:focus {
+  outline: none;
 }
 
 .todo-list {
@@ -30,6 +37,7 @@ form {
 }
 
 .todo-item {
+  position: relative;
   font-size: 2em;
   padding: 12px 15px;
 }
@@ -46,6 +54,10 @@ form {
   border-radius: 0 0 10px 10px;
 }
 
+.todo-item:only-child {
+  border-radius: 10px 10px 10px 10px;
+}
+
 .todo-item:hover {
   background-color: lightgray;
 }
@@ -54,9 +66,16 @@ form {
   background-color: transparent;
   border: none;
   font-size: inherit;
+  cursor: pointer;
 }
 
 .check {
+  cursor: pointer;
+}
+
+.todo-remove {
+  position: absolute;
+  right: 10px;
   cursor: pointer;
 }
 /*# sourceMappingURL=index.css.map */

@@ -19,7 +19,8 @@ class TodoItem extends React.Component{
     render(){
         return(
             <div className='todo-item'>
-                <button><span className='check' role="img" aria-label="check" onClick={this.checkItem}>{this.state.checked ? "✅" : "🟥"}</span></button> { this.props.task.title }
+                <button className='check' onClick={this.checkItem}><span role="img" aria-label="check">{this.state.checked ? "✅" : "🟥"}</span></button> { this.props.task.title }
+                <button className='todo-remove' onClick={this.props.onDelete}><span role="img" aria-label="remove">❌</span></button>
             </div>
         )
     }

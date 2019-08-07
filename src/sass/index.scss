@@ -23,9 +23,15 @@ body {
     text-align: center;
   }
 
-  form{
-      text-align: center;
-      margin-bottom: 10px;
+  .todo-input{
+    margin-left: 10px;
+    font-size: 2rem;
+    border: none;
+    width: 90%;
+    background-color: transparent;
+    &:focus{
+      outline: none;
+    }
   }
   
   .todo-list{
@@ -35,6 +41,7 @@ body {
   }
   
   .todo-item{
+    position: relative;
     font-size: 2em;
     padding: 12px 15px;
     &:not(:first-child){
@@ -46,6 +53,10 @@ body {
     &:last-child{
       border-radius: 0 0 10px 10px;
     }
+    &:only-child{
+      border-radius: 10px 10px 10px 10px;
+    }
+
     &:hover{
       background-color: lightgray;
     }
@@ -54,9 +65,16 @@ body {
       background-color: transparent;
       border: none;
       font-size: inherit;
+      cursor: pointer;
     }
   }
   
   .check{
+    cursor: pointer;
+  }
+
+  .todo-remove{
+    position: absolute;
+    right: 10px;
     cursor: pointer;
   }
