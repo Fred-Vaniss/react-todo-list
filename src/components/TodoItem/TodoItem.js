@@ -19,7 +19,7 @@ class TodoItem extends React.Component{
     render(){
         return(
             <div className='todo-item'>
-                <span className='check' role="img" aria-label="check" onClick={this.checkItem}>{this.state.checked ? "✅" : "🟥"}</span> { this.props.task.title }
+                <button><span className='check' role="img" aria-label="check" onClick={this.checkItem}>{this.state.checked ? "✅" : "🟥"}</span></button> { this.props.task.title }
             </div>
         )
     }

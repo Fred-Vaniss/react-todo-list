@@ -27,17 +27,33 @@ form {
 .todo-list {
   background-color: white;
   border-radius: 10px;
-  padding: 1em;
 }
 
 .todo-item {
   font-size: 2em;
+  padding: 12px 15px;
 }
 
 .todo-item:not(:first-child) {
-  margin-top: 15px;
-  padding-top: 10px;
   border-top: 1px solid #000;
+}
+
+.todo-item:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.todo-item:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.todo-item:hover {
+  background-color: lightgray;
+}
+
+.todo-item button {
+  background-color: transparent;
+  border: none;
+  font-size: inherit;
 }
 
 .check {

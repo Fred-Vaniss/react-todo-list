@@ -16,6 +16,9 @@ class App extends React.Component {
   }
 
   addTodo(event){
+    this.setState({
+      userInput: ''
+    })
     event.preventDefault()
   }
 
@@ -25,6 +28,7 @@ class App extends React.Component {
         <TodoItem key={task.id} task={ task }/>
       )
     })
+
 
     return (
       <div className="wrapper">
