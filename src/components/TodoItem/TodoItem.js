@@ -14,6 +14,8 @@ class TodoItem extends React.Component{
         } else {
             this.setState({checked: false})
         }
+
+        this.props.onCheck.bind(this, this.props.task.id, this.state.checked)
     }
 
     render(){

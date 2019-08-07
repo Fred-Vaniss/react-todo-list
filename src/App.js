@@ -1,6 +1,7 @@
 import React from 'react';
 import ls from 'local-storage'
 import { TodoItem } from './components'
+import { isNull } from 'util';
 
 class App extends React.Component {
   constructor() {
@@ -11,6 +12,19 @@ class App extends React.Component {
       todoList: []
     }
     this.handleDelete = this.handleDelete.bind(this)
+    this.handleCheck = this.handleCheck.bind(this)
+  }
+
+  componentWillMount () {
+    const storage = JSON.parse(localStorage.getItem('todolist'))
+    if (!isNull(storage)){
+      this.setState({
+        todoIndex: storage.todoIndex,
+        todoList: storage.todoList
+      })
+    }
+
+    console.log(storage)
   }
 
   onChange(event){
@@ -24,18 +38,28 @@ class App extends React.Component {
       userInput: '',
       todoIndex: this.state.todoIndex + 1,
       todoList: [...this.state.todoList, {id: this.state.todoIndex, title: this.state.userInput, checked: false}]
-    }, () => console.log(this.state.todoList))
+    }, () => this.saveData(this.state))
     event.preventDefault()
-  }
+    console.log(this.state)
+    
 
-  
+  }
 
   listTodo(){
     return this.state.todoList.map((item) => {
       return(
-        <TodoItem key={item.id} onDelete={this.handleDelete} task={ item }/>
+        <TodoItem key={item.id} onCheck={this.handleCheck} onDelete={this.handleDelete} task={ item }/>
       )
     })
+  }
+
+  handleCheck(id, state){
+    console.log("check")
+    console.log({id})
+    // const array = this.state.todoList
+    // const index = array.findIndex(i => i.id === id)
+
+    // array[index].checked = state
   }
 
   handleDelete(id){
@@ -46,7 +70,13 @@ class App extends React.Component {
 
     this.setState({
       todoList: array
-    })
+    }, () => this.saveData(this.state))
+
+    
+  }
+
+  saveData(data){
+    localStorage.setItem('todolist', JSON.stringify(data))
   }
 
   render(){
