@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Fred-Vaniss/react-todo-list/static/css/main.6682083f.chunk.css",
-    "main.js": "/Fred-Vaniss/react-todo-list/static/js/main.c0956d4e.chunk.js",
-    "main.js.map": "/Fred-Vaniss/react-todo-list/static/js/main.c0956d4e.chunk.js.map",
-    "runtime~main.js": "/Fred-Vaniss/react-todo-list/static/js/runtime~main.ed4430b9.js",
-    "runtime~main.js.map": "/Fred-Vaniss/react-todo-list/static/js/runtime~main.ed4430b9.js.map",
-    "static/js/2.d5b93b5d.chunk.js": "/Fred-Vaniss/react-todo-list/static/js/2.d5b93b5d.chunk.js",
-    "static/js/2.d5b93b5d.chunk.js.map": "/Fred-Vaniss/react-todo-list/static/js/2.d5b93b5d.chunk.js.map",
-    "index.html": "/Fred-Vaniss/react-todo-list/index.html",
-    "precache-manifest.ee6acd4669f140b8ba627628f6ac9456.js": "/Fred-Vaniss/react-todo-list/precache-manifest.ee6acd4669f140b8ba627628f6ac9456.js",
-    "service-worker.js": "/Fred-Vaniss/react-todo-list/service-worker.js",
-    "static/css/main.6682083f.chunk.css.map": "/Fred-Vaniss/react-todo-list/static/css/main.6682083f.chunk.css.map"
+    "main.css": "/static/css/main.6682083f.chunk.css",
+    "main.js": "/static/js/main.c0956d4e.chunk.js",
+    "main.js.map": "/static/js/main.c0956d4e.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
+    "static/js/2.7794df98.chunk.js": "/static/js/2.7794df98.chunk.js",
+    "static/js/2.7794df98.chunk.js.map": "/static/js/2.7794df98.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.1dfec0697cd57aa185b840c6e34dc39d.js": "/precache-manifest.1dfec0697cd57aa185b840c6e34dc39d.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.6682083f.chunk.css.map": "/static/css/main.6682083f.chunk.css.map"
   }
 }
