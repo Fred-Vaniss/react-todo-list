@@ -5,6 +5,8 @@
 * Réalisé en une journée
 * React
 
+![Screenshot](./markdown/screenshot.jpg)
+
 Création d'une application React pour faire une liste des tâche où l'on peut cocher, décocher et supprimer une tâche.
 
 Une mise en application de tout ce que j'ai appris en React jusqu'à présent.

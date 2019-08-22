@@ -25,7 +25,7 @@ class TodoItem extends React.Component{
         return(
             <div className='todo-item'>
               {/*                         Appelle la fonction pour changer l'état                       Affiche soit la case verte ou rouge selon l'état */}
-                <button className='check' onClick={this.checkItem}><span role="img" aria-label="check">{this.state.checked ? "✅" : "🟥"}</span></button> { this.props.task.title }
+                <button className={`check ${this.state.checked ? 'checked' : 'unchecked'}`} onClick={this.checkItem}><span role="img" aria-label="check">{this.state.checked ? "✔" : "✘"}</span></button> { this.props.task.title }
               {/*                               Appelle l'événement sur app.js avec l'ID en tant qu'argument */}
                 <button className='todo-remove' onClick={this.props.onDelete.bind(this, this.props.task.id)}><span role="img" aria-label="remove">❌</span></button>
             </div>
